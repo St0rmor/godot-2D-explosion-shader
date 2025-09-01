@@ -1,15 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://bt10caaghte3q"]
 
 [ext_resource type="Texture2D" uid="uid://bf2wua5jtwoh3" path="res://icon.svg" id="2_d5ksw"]
-[ext_resource type="Shader" uid="uid://bk21ou1sxhq1d" path="res://explosion.gdshader" id="2_jpcx4"]
-[ext_resource type="Script" uid="uid://cse23r8onrndu" path="res://explosion.gd" id="3_y10h6"]
-
-[sub_resource type="Gradient" id="Gradient_rthvm"]
-offsets = PackedFloat32Array(0, 0.5, 0.97479)
-colors = PackedColorArray(1, 0.94278, 0.414062, 1, 1, 0.175781, 0, 1, 0, 0, 0, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_kyxfb"]
-gradient = SubResource("Gradient_rthvm")
+[ext_resource type="Shader" uid="uid://f8pyr1mjgflx" path="res://explosion.gdshader" id="2_jpcx4"]
+[ext_resource type="Script" uid="uid://cxahh3jhfyose" path="res://explosion.gd" id="3_y10h6"]
 
 [sub_resource type="Curve" id="Curve_rthvm"]
 _data = [Vector2(0, 0.189567), 0.0, 0.0, 0, 0, Vector2(1, 0.943293), -0.0230989, 0.0, 0, 0]
@@ -17,6 +10,13 @@ point_count = 2
 
 [sub_resource type="CurveTexture" id="CurveTexture_kyxfb"]
 curve = SubResource("Curve_rthvm")
+
+[sub_resource type="Gradient" id="Gradient_rthvm"]
+offsets = PackedFloat32Array(0, 0.5, 0.97479)
+colors = PackedColorArray(1, 0.94278, 0.414062, 1, 1, 0.175781, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_kyxfb"]
+gradient = SubResource("Gradient_rthvm")
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_dilkd"]
 noise_type = 0
@@ -41,13 +41,13 @@ noise = SubResource("FastNoiseLite_bmmhg")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vwllo"]
 resource_local_to_scene = true
 shader = ExtResource("2_jpcx4")
-shader_parameter/seed = -0.19
+shader_parameter/seed = 0.0
 shader_parameter/start_point = 0.85
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_4cvjh")
 shader_parameter/noise_texture_2 = SubResource("NoiseTexture2D_3cgar")
-shader_parameter/curve = SubResource("CurveTexture_kyxfb")
+shader_parameter/color_curve = SubResource("CurveTexture_kyxfb")
 shader_parameter/color_sample = SubResource("GradientTexture1D_kyxfb")
-shader_parameter/process = 1.0
+shader_parameter/expansion = 0.0
 shader_parameter/vanish = 0.0
 shader_parameter/flame = 0.0
 

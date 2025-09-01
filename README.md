@@ -3,9 +3,9 @@ A simple Godot 2D realistic explosion shader based on Perlin noise.
 
 <img src="Sample.png" alt="Sample" height="300"><img src="Sample2.png" alt="Sample2" height="300">
 
-Support for Godot4x
+Support Godot4x.
 
-HDR 2D is recommended to be enabled to achieve the best effect
+HDR 2D is recommended to be enabled to achieve the best effect.
 
 ## Usage
 <img src="Parameter.png" alt="Parameter" height="300">

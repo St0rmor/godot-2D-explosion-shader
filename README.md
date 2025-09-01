@@ -1,4 +1,4 @@
-# godot-2D-explosion-shader
+# Godot 2D explosion shader
 A simple Godot 2D realistic explosion shader based on Perlin noise.
 
 <img src="Sample.png" alt="Sample" height="300"><img src="Sample2.png" alt="Sample2" height="300">
@@ -23,3 +23,5 @@ Others are properties. Change them only when you want to modify the explosion ef
 - `noise_texture` and `noise_texture2`: The Perlin noise texture used to generate the texture and decide the rendered color.
 - `color_curve`: Control the color distribution.
 - `color_sample`: The color of the explosion. The color gradient will be applied based on the color of the noise and the `color_curve`.
+
+The effect is used in the game: https://store.steampowered.com/app/3353900/COLD_BOOT/

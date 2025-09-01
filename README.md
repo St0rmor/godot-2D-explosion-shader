@@ -24,4 +24,4 @@ Others are properties. Change them only when you want to modify the explosion ef
 - `color_curve`: Control the color distribution.
 - `color_sample`: The color of the explosion. The color gradient will be applied based on the color of the noise and the `color_curve`.
 
-The effect is used in the game: https://store.steampowered.com/app/3353900/COLD_BOOT/
+The effect is used in the game: https://store.steampowered.com/app/3353900?utm_source=github
